@@ -20,7 +20,6 @@ package org.apache.fineract.portfolio.savings.jobs.postinterestforsavings;
 
 import org.apache.fineract.infrastructure.configuration.domain.ConfigurationDomainService;
 import org.apache.fineract.infrastructure.jobs.service.JobName;
-import org.apache.fineract.portfolio.savings.domain.SavingsAccountAssembler;
 import org.apache.fineract.portfolio.savings.domain.SavingsAccountRepositoryWrapper;
 import org.apache.fineract.portfolio.savings.service.SavingsAccountReadPlatformService;
 import org.apache.fineract.portfolio.savings.service.SavingsAccountWritePlatformService;
@@ -54,8 +53,6 @@ public class PostInterestForSavingConfig {
     private SavingsAccountWritePlatformService savingsAccountWritePlatformService;
     @Autowired
     private SavingsAccountRepositoryWrapper savingsAccountRepository;
-    @Autowired
-    private SavingsAccountAssembler savingAccountAssembler;
     @Autowired
     private JdbcTemplate jdbcTemplate;
     @Autowired
